@@ -1,7 +1,7 @@
 # WEEK02 Silvia Zhou
 
 ## Field Notes
-[Week02 Field Notes]([https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/wiki/Week01-Field-Notes](https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/wiki/Week02-Field-Notes))
+[Week02 Field Notes](https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/wiki/Week02-Field-Notes)
 
 ## Sitemap & User Flow
 [Documentation](https://app.notion.com/p/Week02-HW-3dd732c596ea8094aff5c5ac06ab1f6e?source=copy_link)
