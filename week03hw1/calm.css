@@ -1,0 +1,64 @@
+body {
+  background-color: #fffaf0;
+  color: #4a4038;
+  font-family: Georgia, serif;
+}
+
+.recipe {
+  width: 500px;
+  margin: 80px auto;
+  padding: 50px;
+  background-color: white;
+  border: 1px solid #e6ddd0;
+}
+
+.label {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #a39788;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  color: #786f66;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.steps {
+  border-top: 1px solid #ddd4c8;
+  border-bottom: 1px solid #ddd4c8;
+  padding: 25px 0;
+}
+
+.steps p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.egg {
+  font-size: 80px;
+  text-align: center;
+  margin: 40px;
+}
+
+.end {
+  text-align: center;
+  font-style: italic;
+  color: #a39788;
+}
+.switch {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  color: #786f66;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
