@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777777;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.notification {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.notification h2,
+.notification h3 {
+    margin-top: 0;
+}
+
+.notification p {
+    margin-bottom: 0;
+}
+
+
+/* PART 1 — CALM */
+
+.calm {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.big {
+    width: 400px;
+    text-align: center;
+}
+
+
+/* PART 2 — STARTING */
+
+.starting {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.starting .notification {
+    width: 200px;
+}
+
+
+/* PART 3 — BUSY */
+
+.busy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+/* PART 4 — OVERLOAD */
+
+.overload {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.overload .notification {
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* SMALLER SCREEN */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .starting {
+        flex-wrap: wrap;
+    }
+
+    .busy {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overload {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .big {
+        width: 80%;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 400px) {
+
+    .busy {
+        grid-template-columns: 1fr;
+    }
+
+    .overload {
+        grid-template-columns: 1fr;
+    }
+
+}
