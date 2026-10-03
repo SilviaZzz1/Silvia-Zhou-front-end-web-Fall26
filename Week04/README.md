@@ -4,7 +4,7 @@
 [Week04 Field Notes](https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/wiki/Week04-Field-Notes)
 
 ## Web
-[Notification Overload](https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/tree/main/Week04)
+[Notification Overload](https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/tree/main/Week04/week04web)
 
 
 ## Interesting Website
