@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Notification Overload</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
@@ -15,83 +18,286 @@
         <p>It started with just one.</p>
     </header>
 
+
     <main>
 
+        <!-- 1. CALM -->
+
         <section class="calm">
+
             <article class="notification big">
-                <h2>1 New Message</h2>
+
+                <span class="time">12:01 AM</span>
+
+                <h2>Messages</h2>
+
                 <p>hey, are you awake?</p>
+
             </article>
+
         </section>
 
+
+
+        <!-- 2. STARTING -->
 
         <section class="starting">
+
             <article class="notification">
+
+                <span class="time">12:07 AM</span>
+
                 <h3>Mail</h3>
+
                 <p>3 new emails</p>
+
             </article>
 
+
             <article class="notification">
+
+                <span class="time">12:12 AM</span>
+
                 <h3>Messages</h3>
+
                 <p>where are you?</p>
+
             </article>
 
+
             <article class="notification">
+
+                <span class="time">12:18 AM</span>
+
                 <h3>Calendar</h3>
-                <p>Class in 10 minutes</p>
+
+                <p>Class tomorrow at 9 AM</p>
+
             </article>
+
         </section>
 
+
+
+        <!-- 3. BUSY -->
 
         <section class="busy">
+
             <article class="notification">
-                <h3>Brightspace</h3>
+
+                <h3>Canvas</h3>
+
                 <p>Assignment due tonight</p>
+
             </article>
 
+
             <article class="notification">
+
                 <h3>Mail</h3>
+
                 <p>8 unread emails</p>
+
             </article>
 
+
             <article class="notification">
+
                 <h3>Messages</h3>
+
                 <p>hello???</p>
+
             </article>
 
+
             <article class="notification">
+
                 <h3>Calendar</h3>
+
                 <p>Meeting now</p>
+
             </article>
 
+
             <article class="notification">
+
                 <h3>Photos</h3>
-                <p>New memory</p>
+
+                <p>You have a new memory</p>
+
             </article>
 
+
             <article class="notification">
+
                 <h3>System</h3>
+
                 <p>Software update available</p>
+
             </article>
+
         </section>
 
 
+
+        <!-- 4. OVERLOAD -->
+
         <section class="overload">
-            <article class="notification">99+ Messages</article>
-            <article class="notification">12 Emails</article>
-            <article class="notification">LOW BATTERY</article>
-            <article class="notification">Assignment Due</article>
-            <article class="notification">Missed Call</article>
-            <article class="notification">Meeting Started</article>
-            <article class="notification">7 Reminders</article>
-            <article class="notification">Storage Full</article>
-            <article class="notification">Update Now</article>
-            <article class="notification">Are you coming?</article>
-            <article class="notification">DEADLINE</article>
-            <article class="notification">24 New Notifications</article>
+
+            <article class="notification urgent">
+                99+ Messages
+            </article>
+
+            <article class="notification">
+                12 Emails
+            </article>
+
+            <article class="notification urgent">
+                LOW BATTERY
+            </article>
+
+            <article class="notification urgent">
+                ASSIGNMENT DUE
+            </article>
+
+            <article class="notification">
+                Missed Call
+            </article>
+
+            <article class="notification urgent">
+                Meeting Started
+            </article>
+
+            <article class="notification">
+                7 Reminders
+            </article>
+
+            <article class="notification">
+                Storage Full
+            </article>
+
+            <article class="notification">
+                Update Now
+            </article>
+
+            <article class="notification">
+                Are you coming???
+            </article>
+
+            <article class="notification urgent">
+                DEADLINE
+            </article>
+
+            <article class="notification urgent">
+                24 New Notifications
+            </article>
+
+        </section>
+
+
+
+        <!-- END -->
+
+        <section class="end">
+
+            <div id="controls">
+
+                <h2>TOO MUCH?</h2>
+
+                <button id="clearButton">
+                    Clear All
+                </button>
+
+            </div>
+
+
+            <p id="message"></p>
+
         </section>
 
     </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const notifications =
+            document.querySelectorAll(".notification");
+
+        const clearButton =
+            document.querySelector("#clearButton");
+
+        const message =
+            document.querySelector("#message");
+
+        const controls =
+            document.querySelector("#controls");
+
+
+        // show the final quiet screen
+
+        function showQuiet() {
+
+            controls.style.display = "none";
+
+            message.textContent = "Finally, Quiet.";
+
+            message.classList.add("quiet");
+
+        }
+
+
+        // check if every notification is gone
+
+        function checkNotifications() {
+
+            const remaining =
+                document.querySelectorAll(".notification");
+
+            if (remaining.length === 0) {
+
+                showQuiet();
+
+            }
+
+        }
+
+
+        // click individual notification
+
+        notifications.forEach(function(notification) {
+
+            notification.addEventListener("click", function() {
+
+                notification.remove();
+
+                checkNotifications();
+
+            });
+
+        });
+
+
+        // clear everything
+
+        clearButton.addEventListener("click", function() {
+
+            const remaining =
+                document.querySelectorAll(".notification");
+
+            remaining.forEach(function(notification) {
+
+                notification.remove();
+
+            });
+
+            showQuiet();
+
+        });
+
+    </script>
 
 </body>
 
