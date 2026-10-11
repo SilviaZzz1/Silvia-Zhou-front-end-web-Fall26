@@ -5,6 +5,7 @@
 
 ## Design File
 [Silvia Zhou Midterm Design](https://www.figma.com/design/rR241N7OYs0CFuG2gIa7ZE/Front--End-Midterm-Design-File?node-id=0-1&t=yO3Oc6Vzr4MIPkOE-1)
+
 [Silvia Zhou Midterm Presentation](https://www.figma.com/deck/TcGLHo4DiNkLXxre1HlcaD)
 
 
