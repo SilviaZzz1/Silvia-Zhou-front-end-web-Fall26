@@ -14,5 +14,5 @@
 [Week06 Field Notes](https://github.com/SilviaZzz1/Silvia-Zhou-front-end-web-Fall26/wiki/Week06-Field-Notes)
 
 ## website
-(Silvia portfolio)[https://silviazzz1.github.io/personalportfolio-web-sz/]
+[Silvia portfolio](https://silviazzz1.github.io/personalportfolio-web-sz/)
 
