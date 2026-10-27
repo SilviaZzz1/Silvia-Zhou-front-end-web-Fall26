@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+
+  background: #f0f0ec;
+  color: #181818;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+
+  text-align: center;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #737373;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  color: #737373;
+  margin-bottom: 40px;
+}
+
+.mood-card {
+  background: #fafaf8;
+
+  border: 1px solid #d8d8d3;
+  border-radius: 30px;
+
+  padding: 50px 30px;
+
+  transition: transform 0.3s ease;
+}
+
+.mood-card:hover {
+  transform: translateY(-5px);
+}
+
+.cloud {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+#mood-name {
+  font-size: 30px;
+  margin: 10px 0;
+
+  text-transform: uppercase;
+}
+
+#mood-description {
+  color: #737373;
+  margin-bottom: 30px;
+}
+
+button {
+  border: none;
+
+  background: #acd0ff;
+  color: #181818;
+
+  padding: 14px 24px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#counter {
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  color: #737373;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .mood-card {
+    padding: 40px 20px;
+  }
+
+  .cloud {
+    font-size: 80px;
+  }
+
+}
