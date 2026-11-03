@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Plant a small intention. Give it time, water, and a little room to grow."><title>Pocket Garden</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<main>
+<section class="intro"><p class="eyebrow">A LITTLE ATTENTION GOES A LONG WAY</p><h1>Good things<br>take a little <em>care.</em></h1><p class="lede">Plant something you want to make room for.<br>Then see what a little attention can do.</p></section>
+<section class="garden" aria-label="Your interactive garden">
+<div class="scene" id="scene"><div class="scene-top"><span id="stage-label">01 / A PLACE TO BEGIN</span><span>YOUR LITTLE PATCH OF POSSIBILITY</span></div>
+<div class="sun" aria-hidden="true"></div><div class="cloud cloud-one" aria-hidden="true"></div><div class="cloud cloud-two" aria-hidden="true"></div>
+<div class="plant-art" id="plant-art" aria-hidden="true"><div class="bloom"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="stem"></div><div class="leaf left"></div><div class="leaf right"></div><div class="seed"></div><div class="soil"></div></div>
+<p class="scene-caption" id="scene-caption">Every garden starts with a little possibility.</p><div class="ground" aria-hidden="true"></div>
+</div>
+<div class="controls"><div class="section-number">01 — PLANT AN INTENTION</div><form id="plant-form" novalidate><label for="intention">What would you like to grow?</label><div class="input-row"><input id="intention" maxlength="60" placeholder="Patience, a new idea, a little courage…" autocomplete="off" aria-describedby="input-hint"><button type="submit" id="plant-button">Plant a seed <span>↗</span></button></div><p id="input-hint" class="hint">A word or a few words. There’s no wrong thing to grow.</p></form>
+<div class="care-row"><div><div class="section-number">02 — GIVE IT SOME CARE</div><p id="care-hint">Plant your intention to begin.</p></div><button id="water" class="secondary" disabled>Water your seed <span>↘</span></button></div>
+<div class="response" role="status" aria-live="polite" aria-atomic="true"><span class="status-dot"></span><p id="response">Your garden is waiting for you.</p></div>
+<div class="progress" aria-label="Growth progress"><span id="progress-text">NOT PLANTED YET</span><div class="tracks" aria-hidden="true"><i></i><i></i><i></i></div><button id="reset" class="text-button" disabled>Start again ↺</button></div></div>
+</section>
+<section class="journal"><div><p class="eyebrow">LITTLE THINGS, REMEMBERED</p><h2>Your growing notes</h2><p>This garden remembers while you’re here.<br>Refreshing the page gives you a fresh start.</p></div><ol id="notes"><li class="placeholder">Your first little moment will appear here.</li></ol></section>
+</main><footer><span>MADE OF SMALL ACTIONS & QUIET CONSEQUENCES</span><span>Week 09 — The Page Responds</span></footer>
+</body></html>
